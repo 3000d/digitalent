@@ -17,7 +17,7 @@ function draw() {
   // background(200);
   noFill();
   stroke(255, 150);
-  
+
   line(0,0, posX, posY);
   line(width, height, posX, posY);
   line(0, height, posX, posY);
@@ -26,7 +26,7 @@ function draw() {
 
   posX = posX + noise(seed);
   posY = posY + random(-1, 1)*noise(seed);
-  
+
   seed = seed + 0.01;
 
 }
