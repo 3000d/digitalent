@@ -7,7 +7,7 @@ var rouge;
 function setup() {
   createCanvas(1200, 200);
   noStroke();
-  rouge = 0;
+  rouge = 255;
 }
 
 function draw() {
@@ -16,17 +16,17 @@ function draw() {
   rect(0, 0, mouseX, height );
   fill(rouge, 0, 0);
   rect(mouseX, 0, width, height);
-  
-  
+
+
   if(mouseIsPressed){
     if(mouseButton == "left"){
-      rouge = (rouge + 10);  
+      rouge = (rouge + 10);
     }else{
-      rouge = (rouge -10); 
+      rouge = (rouge -10);
     }
-    
+
     print(mouseButton);
   }
-  
-  
+
+
 }

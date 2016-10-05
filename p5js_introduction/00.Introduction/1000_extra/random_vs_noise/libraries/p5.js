@@ -5252,7 +5252,7 @@ exports.sizeOf = sizeOf;
 
     function timedOut() {
       self._timedOut = true
-      self.request.abort()
+      self.request.abort()      
     }
 
     function error(resp, msg, t) {
@@ -9992,7 +9992,7 @@ p5.prototype.background = function() {
  * }
  *
  * function draw() {
- *   ellpse(mouseX, mouseY, 20, 20);
+ *   ellipse(mouseX, mouseY, 20, 20);
  * }
  *
  * function mousePressed() {
