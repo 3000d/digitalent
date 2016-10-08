@@ -1,13 +1,13 @@
 /**
  * Introduction aux boucles
- * 
- **/ 
+ *
+ **/
 function setup() {
   createCanvas(800, 800);
 }
 
 function draw() {
-  rect(0,height/2, 30,30 );
+  rect(0, height/2, 30,30 );
   rect(40,height/2, 30,30 );
   rect(80,height/2, 30,30 );
   rect(120,height/2, 30,30 );

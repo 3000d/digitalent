@@ -1,40 +1,62 @@
 
-var posX;
-var posY;
-var diam;
+var posX=0;
+var posY=-1;
+var diametre=80;
+
 function setup() {
-  createCanvas(900,900);
-  console.log(width);
+  createCanvas(1000,1000);
   posX = width/2;
-  posY =height/2 ;
-  diam = 30;
+  posY = height/2 ;
+  //diametre = 3;
   background(0);
-  strokeWeight(0.3);
+  strokeWeight(1);
+  frameRate(30);
 }
 
 function draw() {
   // background(200);
   noFill();
-  stroke(255, 80);
+  stroke(255, 200);
   //ellipse(posX,posY, mouseX,mouseX);
   // posX = posX + 5;
   // posY = posY + 1;
-  // diam = diam - 10;
+
+  diametre = diametre + 10;
+
+
   //quad(mouseX, mouseY, width/2-mouseX, height/2-mouseY, 300, 400, 600, 400);
-  
-  line(0,0, mouseX, mouseY);
-  line(width, height, mouseX, mouseY);
-  line(0, height, mouseX, mouseY);
-  line(width, 0, mouseX, mouseY);
 
-  
-  /*
-  ellipse(0,0, 30,30);
-  ellipse(width, 0, 30,30);
-  ellipse(0, height, 30,30);
-  ellipse(width, height, 30, 30);
-  */
-  
-  
+//  line(0,0, mouseX, mouseY);
+//  line(width, height, mouseX, mouseY);
+//  line(0, height, mouseX, mouseY);
+//  line(width, 0, mouseX, mouseY);
 
+
+  stroke(0,0,255);
+  ellipse(0,0, diametre,diametre);
+  stroke(0,255,0);
+  ellipse(width, 0, diametre,diametre);
+  stroke(255,0,0);
+  ellipse(0, height, diametre,diametre);
+  stroke(255,255,0);
+  ellipse(width, height, diametre, diametre);
+
+  if(diametre > 1350 ){
+
+
+    background(0);
+
+
+    diametre = 80;
+
+
+  }
+
+}
+
+function keyPressed(){
+  if(key==' '){
+    background(0);
+    diametre = 800;
+  }
 }

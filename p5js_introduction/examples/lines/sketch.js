@@ -5,16 +5,17 @@ function setup() {
   initialize();
   colorMode(HSB);
   strokeWeight(0.1);
+  background(255)
 }
 
 
 function draw() {
-  stroke(degrees(theta), 255, 255, 2);
+  stroke(degrees(theta), 255, 255, 50);
   // calcul du point d'origine des lignes
   var x = width / 2 + cos(theta) * r;
   var y = height / 2 + sin(theta) * r;
 
-  
+
   // calcul du point de destination des lignes
   var mult = 12;
   var cosR = offset + cos(r*r) * theta ;
@@ -23,17 +24,17 @@ function draw() {
   var plusEndY = y + mult * cosR;
   var minusEndX = x - mult * sinR;
   var minusEndY = y - mult * cosR;
-  
+
   // dessine 4 lignes à l'écran
   line(x, y, minusEndX, minusEndY);
   line(x, y, plusEndX, minusEndY);
   line(x, y, plusEndX, plusEndY);
   line(x, y, minusEndX, plusEndY);
-  
+
   // augmente l'angle et le rayon
   r += 0.08;
   theta += 0.231;
-  
+
   if (theta > TWO_PI) {
     theta = 0;
 
@@ -45,7 +46,7 @@ function draw() {
 }
 
 function initialize() {
-  background(0);
+  background(255);
   r = 0;
   theta = 0.1;
   offset = 0;

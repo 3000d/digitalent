@@ -9,14 +9,14 @@ function setup() {
 
 
 function draw() {
-  
-  tailleCarre = 50 * sin(angle);
-  
-  
+
+  //tailleCarre = 50 * sin(angle);
+
+
   var indexCol = 0;
   for (var x = 0; x < width; x = x + tailleCarre) {
     stroke(255, 0,0);
-    
+
     var indexLigne = 0;
     for (var y = 0; y < height; y = y + tailleCarre) {
       if((indexLigne % 2 == 0)&&(indexCol % 2 == 0)
@@ -27,7 +27,7 @@ function draw() {
         fill(0);
       }
       rect(x, y, tailleCarre, tailleCarre);
-      
+
       indexLigne = indexLigne + 1;
     }
     indexCol = indexCol + 1;
