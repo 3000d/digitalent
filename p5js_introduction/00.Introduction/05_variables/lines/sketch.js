@@ -9,14 +9,14 @@ function setup() {
   posX = width/2;
   posY =height/2 ;
   diam = 30;
-  background(0);
-  strokeWeight(0.7);
+  background(255);
+  strokeWeight(0.5);
 }
 
 function draw() {
   // background(200);
   noFill();
-  stroke(255, 150);
+  stroke(0, 10);
 
   line(0,0, posX, posY);
   line(width, height, posX, posY);
@@ -24,9 +24,16 @@ function draw() {
   line(width, 0, posX, posY);
 
 
-  posX = posX + noise(seed);
-  posY = posY + random(-1, 1)*noise(seed);
+  //posX = posX + noise(seed)*cos(seed)*20;
+  //posY = posY + sin(seed)*noise(seed*.3)*40;
+  posX = mouseX;
+  posY = mouseY;
+  seed = seed + 0.02;
 
-  seed = seed + 0.01;
+}
 
+function mousePressed(){
+  background(255);
+  posX = width/2;
+  posY = height/2;
 }

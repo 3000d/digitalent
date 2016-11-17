@@ -8,10 +8,15 @@ function setup() {
 
 function draw() {
   rect(0, height/2, 30,30 );
+
   rect(40,height/2, 30,30 );
+
   rect(80,height/2, 30,30 );
+
   rect(120,height/2, 30,30 );
+
   rect(160,height/2, 30,30 );
+  
   rect(200,height/2, 30,30 );
   rect(240,height/2, 30,30 );
   rect(280,height/2, 30,30 );

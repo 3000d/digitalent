@@ -13,6 +13,7 @@ function setup() {
 }
 
 function draw() {
+  background(255,1);
   stroke(75,0,255,10);
   centreH = mouseX;
   centreV = mouseY;
@@ -23,7 +24,7 @@ function draw() {
   ellipse(centreH+diam/2, centreV,diam, diam);
   diam+=grow*3;
 
-  if(diam>1800){
+  if(diam>800){
     grow*=-1;
     //background(255);
   }
@@ -35,8 +36,10 @@ function draw() {
 }
 
 function mousePressed(){
-  saveCanvas("image","png");
+  // saveCanvas("image","png");
   background(255);
   diam = 12;
   grow = 1;
+  centreH = width/2;
+  centreV = height/2;
 }

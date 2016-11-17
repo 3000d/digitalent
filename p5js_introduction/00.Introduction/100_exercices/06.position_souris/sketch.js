@@ -16,7 +16,7 @@ function draw() {
   // ligne horizontale
   line(0, height/2, width, height/2);
 
-  // si la souris est clické
+  // si la souris est cliquée
   if(mouseIsPressed){
     // variables contenant la position du rectangle coloré que nous allons dessiner
     var positionX = 0;

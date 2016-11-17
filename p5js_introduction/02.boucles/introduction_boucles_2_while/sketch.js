@@ -4,8 +4,8 @@ function setup() {
 
 function draw() {
   var posX = 0;
-  while(posX < 800){
+  while(posX < width){
     rect(posX, height/2, 30, 30);
-    posX = posX + 40;
+     posX = posX + 40;
   }
 }

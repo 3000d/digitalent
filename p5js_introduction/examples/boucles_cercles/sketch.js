@@ -3,11 +3,12 @@ var ecart = 30;
 var posX = 0;
 var posY = 0;
 var angle = 0.1;
+var slider;
 function setup() {
   createCanvas(800, 800);
   noFill();
   strokeWeight(0.5);
-
+  slider = createSlider(0, 300, 30);
   console.log("hello");
 }
 
@@ -27,15 +28,17 @@ function draw() {
     while(posY < height){
       noFill();
 
-      ellipse(posX, posY, tailleCarre, tailleCarre);
-      fill(0,100);
+      //rect(posX, posY, tailleCarre*sin(a)*10, tailleCarre*sin(a)*10);
+      ellipse(posX, posY, slider.value(), slider.value());
+      //fill(0,100);
 
-
+/*
         var t = noise(angle);
         x += t;
 
         var y =posY +tailleCarre/2 * sin(a+posX*0.05);
         ellipse(x, y, 10,10);
+*/
 
       posY += ecart;
       i++;
@@ -43,5 +46,5 @@ function draw() {
 
     posX+=ecart;
   }
-  a+=0.1;
+  a+=0.001;
 }
