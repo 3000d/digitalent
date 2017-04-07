@@ -16,11 +16,12 @@ function setup() {
 
 function draw() {
   background(200);
+  var positionX = mouseX;
   fill(0,255, 0);
   rect(0, 0, positionX, height );
   fill(rouge, 0, 0);
   rect(positionX, 0, width, height);
-  
+
   a+=0.0001;
   if(mouseIsPressed){
     if(mouseButton == "left"){

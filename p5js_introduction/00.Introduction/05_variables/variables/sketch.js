@@ -8,7 +8,7 @@ function setup() {
   posX = width/2;
   posY = height/2 ;
   //diametre = 3;
-  background(0);
+  background(255);
   strokeWeight(1);
   frameRate(30);
 }
@@ -41,10 +41,10 @@ function draw() {
   stroke(255,255,0);
   ellipse(width, height, diametre, diametre);
 
-  if(diametre > 1350 ){
+  if(diametre > width*3 ){
 
 
-    background(0);
+    background(255);
 
 
     diametre = 80;
@@ -56,7 +56,7 @@ function draw() {
 
 function keyPressed(){
   if(key==' '){
-    background(0);
+    background(255);
     diametre = 800;
   }
 }

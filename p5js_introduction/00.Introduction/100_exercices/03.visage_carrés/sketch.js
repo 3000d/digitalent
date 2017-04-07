@@ -8,9 +8,11 @@ function draw(){
   rect(230, 220, 60, 60);
 
   rect(360, 220, 60, 60);
+/*
   if(frameCount % 10 < 5 ){
     fill(0)
   }
+  */
   rect(245, 235, 30,30);
   rect(375, 235, 30,30);
   fill(255);

@@ -4,6 +4,9 @@
  **/
 function setup() {
   createCanvas(800, 800);
+  background(51);
+  rectMode(CENTER);
+
 }
 
 function draw() {
@@ -16,7 +19,7 @@ function draw() {
   rect(120,height/2, 30,30 );
 
   rect(160,height/2, 30,30 );
-  
+
   rect(200,height/2, 30,30 );
   rect(240,height/2, 30,30 );
   rect(280,height/2, 30,30 );

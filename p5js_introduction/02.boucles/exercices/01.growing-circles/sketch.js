@@ -14,9 +14,14 @@ function draw() {
   stroke(0,10);
 
   size = 10;
+  for(var nbr=1; nbr < 10; nbr++ ){
+    ellipse(mouseX, mouseY, nbr*30, nbr*30);
+  }
+  /*
   while(size < width/4){
     ellipse(mouseX, mouseY, size, size);
     console.log(size);
     size+=10;
   }
+  */
 }
