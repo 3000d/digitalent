@@ -15,7 +15,10 @@ function draw() {
 
   size = 10;
   for(var nbr=1; nbr < 10; nbr++ ){
-    ellipse(mouseX, mouseY, nbr*30, nbr*30);
+    ellipse(mouseX, mouseY, nbr*10, nbr*10);
+    line(width/2,height/2, mouseX, mouseY)
+  //  ellipse(mouseX+nbr*10, mouseY, nbr*10, nbr*10);
+  //  ellipse(mouseX-nbr*10, mouseY, nbr*10, nbr*10);
   }
   /*
   while(size < width/4){

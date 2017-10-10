@@ -4,7 +4,9 @@ function setup() {
 }
 
 function draw(){
+  
   rect(300, 300, 300, 300);
+
   rect(230, 220, 60, 60);
 
   rect(360, 220, 60, 60);
